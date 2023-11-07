@@ -13,22 +13,22 @@ export default function Home() {
         setMenuToggle(!menuToggle)
     }
 
-    return(
+    return (
         <>
             <div className="py-10 px-7">
-         
+
                 <div className="flex items-center justify-between">
-                    
-                    <h2>Feeds</h2>
-                    
-                <div>
-                    <CustomButton onClick={handleToggle}>
-                        <div className="flex items-center p-1">
-                            <PiPlus color="white"/>Create Notes
-                        </div>
-                    </CustomButton>
-                </div>
-                    {menuToggle && <CreateModal/>}
+
+                    <h2 className="p-2">Feeds</h2>
+
+                    <div>
+                        <CustomButton onClick={handleToggle}>
+                            <div className="flex items-center p-1">
+                                <PiPlus color="white" />Create Notes
+                            </div>
+                        </CustomButton>
+                    </div>
+                    {menuToggle && <CreateModal />}
                 </div>
             </div>
         </>
